@@ -6,6 +6,7 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 var passport = require('passport');
 
+mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost/news');
 
 require('./models/Posts');
