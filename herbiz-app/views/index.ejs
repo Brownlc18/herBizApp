@@ -49,7 +49,6 @@
           <h1> Help Her Biz </h2>
             <p> Got a question about your business? Post in below</p>
             <p> Got an answer? Please share your knoweldge and experise with the community</p>
-            
         <div ng-repeat="post in posts | orderBy:'-upvotes'">
           <span class="glyphicon glyphicon-thumbs-up"
             ng-click="incrementUpvotes(post)"></span>
@@ -92,6 +91,11 @@
         <div ng-hide="isLoggedIn()">
           <h3>You need to <a href="/#/login">Log In</a> or <a href="/#/register">Register</a> before you can add a post.</h3>
         </div>
+<br>
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">Your value will be not what you know; it will be what you share</p>
+            <footer class="blockquote-footer">Shared by <cite title="Source Title">Ginni Rometty</cite></footer>
+          </blockquote>
       </script>
     
       <script type="text/ng-template" id="/posts.html">
